@@ -108,7 +108,7 @@ void ex2_5()
     char str[50];
     printf("\n 문자열을 입력하세요: ");
     fgets(str, sizeof(str), stdin);
-    printf("\n 입력된 문자열은 1n");
+    printf("\n 입력된 문자열은 \n");
     for (i = 0; str[i]; i++)
     {
         printf("%c", str[i]);
