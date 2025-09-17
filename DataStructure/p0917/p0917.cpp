@@ -2,6 +2,7 @@
 
 using namespace std;
 
+#pragma region "define area"
 void ex2_1();
 void ex2_2();
 void ex2_3();
@@ -13,20 +14,24 @@ void ex2_8();
 void ex2_9();
 void ex2_10();
 void ex2_11();
+#pragma endregion
 
 int main(int argc, char *argv[])
 {
-    // ex2_1();
-    // ex2_2();
-    // ex2_3();
-    // ex2_4();
-    // ex2_5();
-    // ex2_6();
-    // ex2_7();
-    // ex2_8();
-    // ex2_9();
-    // ex2_10();
+
+#pragma region "execution area"
+    ex2_1();
+    ex2_2();
+    ex2_3();
+    ex2_4();
+    ex2_5();
+    ex2_6();
+    ex2_7();
+    ex2_8();
+    ex2_9();
+    ex2_10();
     ex2_11();
+#pragma endregion
 
     return 0;
 }
@@ -240,7 +245,7 @@ void ex2_9()
 void ex2_10()
 {
     int i;
-    char* ptrArray[4] = { "Korea", "Seoul", "Mapo", "152번지 2_/3" };
+    char *ptrArray[4] = {"Korea", "Seoul", "Mapo", "152번지 2_/3"};
 
     for (i = 0; i < 4; i++)
     {
@@ -260,8 +265,8 @@ void ex2_10()
 
 void ex2_11()
 {
-    char* ptrArray[2];
-    char** ptrptr;
+    char *ptrArray[2];
+    char **ptrptr;
     int i;
 
     ptrArray[0] = "Korea";
@@ -276,7 +281,7 @@ void ex2_11()
     printf("\n ptrArray[1]의 주소 (&ptrArray[1]) = %u", &ptrArray[1]);
     printf("\n ptrArray[1]의 값 (ptrArray[1]) = %u", ptrArray[1]);
     printf("\n ptrArray[1]의 참조 문자 (*ptrArray[1]) = %c", *ptrArray[1]);
-    printf("\n ptrArray[1]의 참조 문자열 (*ptrArray[1]) = %s \n", *(ptrArray+1));
+    printf("\n ptrArray[1]의 참조 문자열 (*ptrArray[1]) = %s \n", *(ptrArray + 1));
 
     printf("\n ptrptr의 주소 (&ptr) = %u", &ptrptr);
     printf("\n ptrptr의 값 (ptrptr) = %u", ptrptr);
