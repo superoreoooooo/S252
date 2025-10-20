@@ -160,10 +160,16 @@ int main(int argc, char const *argv[])
     insertMiddleNode(L, searchNode(L, "b"), "c");
     printList(L);
 
-    // deleteNode(L, searchNode(L, "b"));
-    // printList(L);
+    deleteNode(L, searchNode(L, "b"));
+    printList(L);
 
     reverse(L);
+    printList(L);
+
+    reverse(L);
+    printList(L);
+
+    insertMiddleNode(L, searchNode(L, "a"), "b");
     printList(L);
 
     return 0;
